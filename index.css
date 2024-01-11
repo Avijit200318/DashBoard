@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 5rem;
+}
+
+.box1,
+.box3 {
+    width: 22rem;
+    padding: 3rem 2rem;
+
+}
+
+.box1 {
+    background: #fff7fe;
+}
+
+.box2 {
+    width: 40rem;
+}
+
+.imageBox {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageText h1,
+h1 {
+    font-size: 1.5rem;
+}
+
+.imageText p {
+    font-size: 0.7rem;
+    font-weight: bold;
+
+}
+
+#image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.content {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    margin-left: 2.1rem;
+}
+
+.content h5 {
+    margin-bottom: 0.8rem;
+    font-size: 15px;
+}
+
+.content h1 {
+    margin: 0.3rem 0;
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 0.4rem;
+    color: #d5aeae;
+}
+
+.content h3 {
+    margin-top: 1rem;
+}
+
+.content h2,
+h2 {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.smallText {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.btn {
+    width: 6rem;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 2rem 0;
+    transition: 0.5s;
+}
+
+hr {
+    margin: 0.8rem 0;
+    color: #e0cccc;
+    border: 1px solid;
+}
+
+.blackText {
+    color: black;
+}
+
+.slideBox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sliderValue {
+    background: yellow;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.slider input[type="range"] {
+    width: 200px;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+}
+
+.contentBox {
+    background: #faf7fa;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.update {
+    margin: 0.9rem 0 0 0;
+    width: 90%;
+}
+
+.contentBox a {
+    text-align: center;
+    margin: 1.2rem 0;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #7070c4;
+}
+
+.lastBox {
+    padding: 5px;
+    border-left: 2px solid blue;
+    margin-top: 2rem;
+}
+
+.lastBox h2 {
+    font-size: 0.9rem;
+    margin-bottom: 7px;
+    color: #978f8f;
+}
+
+.lastBox h2:nth-child(2) {
+    color: black;
+}
+
+.lastBox a {
+    margin-top: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 500;
+    color: blue;
+    display: block;
+}
+
+button:hover {
+    background: rgb(66, 66, 187);
+    transform: scale(1.1);
+}
+
+.graphBox {
+    padding: 4rem;
+}
+
+.graphBox h5 {
+    color: blue;
+    margin-bottom: 4px;
+}
+
+.graphBox h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+#threeBox {
+    display: flex;
+    gap: 2rem;
+}
+
+.separate {
+    padding: 1rem 0;
+    width: 7rem;
+    border-bottom: 2px solid blue;
+}
+
+.separate h1 {
+    margin-bottom: 0;
+}
+
+.graphBox h2 {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.cicularBar h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 1520px) {
+    .container {
+        justify-content: start;
+        min-height: 100vh;
+        padding: 0;
+        gap: 2vw;
+    }
+
+    .box2 {
+        width: 39rem;
+    }
+
+    .box1 {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 1410px) {
+    .container {
+        gap: 1vw;
+    }
+}
+
+@media (max-width: 1380px) {
+    .container {
+        gap: 0;
+    }
+}
+
+@media (max-width: 1353px) {
+    .box2 {
+        width: 34rem;
+    }
+}
+
+@media (max-width: 1273px) {
+    .graphBox{
+        padding: 3rem;
+    }
+    .box2 {
+        width: 30rem;
+    }   
+}
+@media (max-width: 1201px) {
+    .box2{
+        width: 26rem;
+    }
+    .graphBox{
+        padding: 3rem 2rem;
+    }
+}
+@media (max-width: 1145px)
+{
+    .box3 {
+        width: 21rem;
+        padding: 3rem 1rem;
+    }
+    .box1 {
+        width: 20rem;
+        padding: 3rem 1rem 3rem 2rem;
+    }
+}
+@media (max-width: 1100px)
+{
+    .box2 {
+        width: 36rem;
+      }
+    .container{
+        justify-content: center;
+    }
+}
+@media (max-width: 930px)
+{
+    .box2 {
+        width: 28rem;
+      }
+}
+@media (max-width: 794px)
+{
+    .box2 {
+        width: 21rem;
+      }
+}
+@media (max-width: 664px)
+{
+    .imageBox {
+        justify-content: start;
+        margin-left: 40px;
+      }
+    .box1,.box2, .box3 {
+        width: 31rem;
+        margin-left: 0;
+      }
+}
+@media (max-width: 438px)
+{
+    html{
+        font-size: 81%;
+    }
+}
+@media (max-width: 376px)
+{
+    html{
+        font-size: 81%;
+    }
+}
+@media (max-width: 376px)
+{
+    html{
+        font-size: 70%;
+    }
+}

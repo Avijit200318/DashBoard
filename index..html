@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./nav.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./chart.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="logo_item">
+      <i class="bx bx-menu" id="sidebarOpen"></i>
+    </div>
+  </nav>
+
+  <!-- sidebar -->
+  <nav class="sidebar close">
+    <div class="menu_content">
+      <ul class="menu_items">
+        <div class="menu_title menu_dahsboard"></div>
+        <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+        <!-- start -->
+        <li class="item">
+          <div href="#" class="nav_link submenu_item">
+            <span class="navlink_icon">
+              <i class="bx bx-home-alt"></i>
+            </span>
+            <span class="navlink">Home</span>
+            <i class="bx bx-chevron-right arrow-left"></i>
+          </div>
+
+          <ul class="menu_items submenu">
+            <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            <a href="#" class="nav_link sublink">Nav Sub Link</a>
+          </ul>
+        </li>
+        <!-- end -->
+
+        <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+        <!-- start -->
+        <li class="item">
+          <div href="#" class="nav_link submenu_item">
+            <span class="navlink_icon">
+              <i class="bx bx-grid-alt"></i>
+            </span>
+            <span class="navlink">Overview</span>
+            <i class="bx bx-chevron-right arrow-left"></i>
+          </div>
+
+          <ul class="menu_items submenu">
+            <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            <a href="#" class="nav_link sublink">Nav Sub Link</a>
+          </ul>
+        </li>
+        <!-- end -->
+      </ul>
+
+      <ul class="menu_items">
+        <div class="menu_title menu_editor"></div>
+        <!-- duplicate these li tag if you want to add or remove navlink only -->
+        <!-- Start -->
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bxs-magic-wand"></i>
+            </span>
+            <span class="navlink">Magic build</span>
+          </a>
+        </li>
+        <!-- End -->
+
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-loader-circle"></i>
+            </span>
+            <span class="navlink">Filters</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-filter"></i>
+            </span>
+            <span class="navlink">Filter</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-cloud-upload"></i>
+            </span>
+            <span class="navlink">Upload new</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu_items">
+        <div class="menu_title menu_setting"></div>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-flag"></i>
+            </span>
+            <span class="navlink">Notice board</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-medal"></i>
+            </span>
+            <span class="navlink">Award</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-cog"></i>
+            </span>
+            <span class="navlink">Setting</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-layer"></i>
+            </span>
+            <span class="navlink">Features</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Sidebar Open / Close -->
+      <div class="bottom_content">
+        <div class="bottom expand_sidebar">
+          <span> Expand</span>
+          <i class='bx bx-log-in'></i>
+        </div>
+        <div class="bottom collapse_sidebar">
+          <span> Collapse</span>
+          <i class='bx bx-log-out'></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end of side navbar -->
+  <div class="container">
+    <div class="box1">
+      <div class="imageBox">
+        <img id="image" src="./gojo.jpg" alt="">
+        <div class="imageText">
+          <h1>HI Mike,</h1>
+          <p>Welcome Back</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <h5>Today</h5>
+        <h1>&dollar;19,892</h1>
+        <p>Accepted Balance</p>
+        <h3>&dollar;4,000</h3>
+        <p class="smallText">Year to Date Contributions</p>
+        <h3>&dollar;1,892</h3>
+        <p class="smallText">Total Interest</p>
+        <button class="btn">I Want to</button>
+      </div>
+      <div class="content">
+        <h2>Recent Transaction</h2>
+        <p>2020-08-07</p>
+        <p class="smallText blackText">Withdrawal Transfer to Bank-XXX11</p>
+        <hr>
+        <p>2020-08-07</p>
+        <p class="smallText blackText">Withdrawal Transfer to Bank-XXX11</p>
+        <hr>
+        <p>2020-08-07</p>
+        <p class="smallText blackText">Withdrawal Transfer to Bank-XXX11</p>
+      </div>
+    </div>
+    <!-- code for box2 -->
+    <div class="box2">
+      <div class="graphBox">
+        <h5>Retirement Income</h5>
+        <h1>Starting Year 2056</h1>
+        <div id="threeBox">
+          <div class="separate">
+            <h1>&dollar;300,000</h1>
+            <p class="smallText">My Goal</p>
+          </div>
+          <div class="separate">
+            <h1>59%</h1>
+            <p class="smallText">Goal Achive</p>
+          </div>
+          <div class="separate">
+            <h1>&dollar;300</h1>
+            <p class="smallText">Est, Monthly Income</p>
+          </div>
+        </div>
+        <h2>Contribution Overtime</h2>
+        <div class="graph">
+          <div class="chart">
+            <canvas id="barchart"></canvas>
+          </div>
+        </div>
+        <div class="cicularBar">
+          <h2>How do I compare to my peers?</h2>
+          <p class="smallText">Theses number represents current goal achivments</p>
+          <div class="progressBox">
+            <div class="progress" style="--i:78;--clr:#43f94a;">
+              <h3>78<span>%</span></h3>
+              <h4>Average</h4>
+            </div>
+
+            <div class="progress" style="--i:95;--clr:#2ccde9;">
+              <h3>95<span>%</span></h3>
+              <h4>Top</h4>
+            </div>
+
+            <div class="progress" style="--i:69;--clr:#ffe047;">
+              <h3>69<span>%</span></h3>
+              <h4>Me</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- code for box3 -->
+    <div class="box3">
+      <div class="contentBox">
+        <h2>Retirement Strategy</h2>
+        <p class="blackText">Employee Contribution</p>
+        <div class="slideBox">
+          <div class="slider1">
+            <input type="range" min="0" max="100" value="12">
+          </div>
+          <div class="sliderValue1">12</div>
+        </div>
+        <p class="blackText">Retirement Age</p>
+        <div class="slideBox">
+          <div class="slider2">
+            <input type="range" min="0" max="100" value="62">
+          </div>
+          <div class="sliderValue2">62</div>
+        </div>
+        <hr>
+        <div class="rate">
+          <p class="blackText">Employee Contribution</p>
+          <p class="blackText">8.2%</p>
+        </div>
+        <div class="rate">
+          <p class="blackText">Intrest Rate</p>
+          <p class="blackText">5%</p>
+        </div>
+        <button class="btn update">Update</button>
+        <a href="">View Help Docs ></a>
+      </div>
+      <div class="lastBox">
+        <h2>Are you considering a</h2>
+        <h2 class="blackText">Housing Advance?</h2>
+        <p>Limited time reduced interest</p>
+        <a href="">Learn More ></a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./index.js"></script>
+
+</html>
